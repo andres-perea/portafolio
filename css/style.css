@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    background: #F5F1E3;
+}
+
+header {
+    background: #292f36;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item a {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 11px;
+    margin-left: 10px;
+    transition: .5s;
+}
+  
+.nav-item a:hover {
+    color: #96e072;
+    transform: scale(1.1);
+}
+
+.CV {
+    background: #3E8914;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 35px;
+    margin: 0 -100px 0 50px;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.CV:hover {
+    background: #1da849;
+    transform: scale(1.1);
+}
+/* === INICIO === */
+
+.inicio {
+  padding: 280px 0 140px 0;
+  border-bottom: 5px solid #3E8914;
+}
+
+.inicio h2 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.inicio p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin-top: -40px;
+}
+
+/* === SOBRE MI === */
+
+.sobreMi {
+  padding: 200px 0 140px 0;
+  font-weight: bold;
+  margin-bottom: 18px;
+  border-bottom: 5px solid #3E8914;
+}
+
+.sobreMi h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.sobreMi p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sobreMi span {
+  color: #3E8914;
+}
+
+.telefono, .correo {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #F5F1E3;
+  border: 2px solid #3E8914;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.telefono:hover, .correo:hover {
+  transform: scale(1.1);
+}
+
+.telefono i, .correo i {
+  font-weight: 60px;
+}
+/* === ESTUDIOS === */
+
+.timeline-items{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #292f36;
+  left: calc(50% - 1px);
+}
+
+.timeline-items::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #292f36;
+  left: calc(50% - 1px);
+}
+
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(even){
+  padding-right: calc(50% + 30px);
+  text-align: left;
+}
+.timeline-item:nth-child(odd){
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+  height: 16px;
+  width: 16px;
+  background-color: #3E8914;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.estudios {
+  padding-top: 200px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.estudios {
+  padding: 200px 0 140px 0;
+  font-weight: bold;
+  margin-bottom: 18px;
+  border-bottom: 5px solid #3E8914;
+}
+
+.estudios h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.estudios p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* === Proyectos === */
+
+.tituloProyecto {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.Proyectos {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.Proyectos {
+  padding: 50px 0px 200px 0px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  border-bottom: 5px solid #3E8914;
+}
+
+.tituloProyecto {
+  padding-top: 100px;
+  margin-bottom: 18px;
+}
+
+.containerProyecto {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.containerProyecto .cartas {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.containerProyecto .cartas:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+ .containerProyecto .cartas img {
+  width: 330px;
+  height: 220px;
+  background-size: cover;
+}
+
+.containerProyecto .cartas h4 {
+  font-weight: 600;
+}
+
+.containerProyecto .cartas p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.containerProyecto .cartas a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+/* === Habilidades === */
+
+.habilidades {
+  padding: 50px 0px 140px 0px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  border-bottom: 5px solid #3E8914;
+}
+
+.habilidades h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.progress-bar {
+  width: 400px;
+  height: 40px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.5s ease;
+}
+
+.percent-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+}
+
+.barras {
+  /*margin-top: 60px;
+  margin-left: 300px;*/
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  /* === Tablet === */
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+}
+
+  /* === Smartphone === */
+
+@media  screen and (min-width:320px) and (max-width: 600px) {
+    
+}
